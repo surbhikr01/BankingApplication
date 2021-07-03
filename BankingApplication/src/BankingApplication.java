@@ -2,8 +2,7 @@ import java.util.Scanner;
 public class BankingApplication {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BankAccount obj1 = new BankAccount("Surbhi", "SU0001");
+		BankAccount obj1 = new BankAccount("Surbhi", "SU" + Math.round(Math.random()*100000));
 		obj1.showMenu();
 	}
 
