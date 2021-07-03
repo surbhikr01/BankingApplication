@@ -34,8 +34,13 @@ class BankAccount
 	{
 		if (amount != 0)
 		{
+			if (amount > balance) {
+				System.out.println("Sorry! Withdrawal requested amount is more than the balance.");
+			}
+			else {
 			balance = balance - amount;
 			previousTransaction = -amount;
+			}
 		}
 	}
 	
